@@ -1,0 +1,44 @@
+.c-TopBar {
+  background-color: #4D6D63;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+
+  svg {
+    color: white;
+  }
+
+  @include media('>=medium') {
+    text-align: left;
+  }
+}
+
+.c-TopBar__inner {
+  padding: 10px;
+}
+
+.c-TopBar__select {
+  -webkit-appearance: none;
+  background-color: white;
+  border: 0;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  color: #4D6D63;
+  font: inherit;
+  margin: 0 6px;
+  outline: 0;
+  padding: 5px 10px;
+
+  &:focus {
+    border-bottom-color: rgba(white, 0.5);
+  }
+}
+
+.c-TopBar__nav {
+  margin-top: 20px;
+
+  @include media('>=medium') {
+    float: right;
+    margin-top: 20px
+  }
+}
